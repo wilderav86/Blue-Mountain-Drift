@@ -1,8 +1,8 @@
 import Head from "next/head";
-import BgImage from "./components/BgImage";
-import NameTag from "./components/NameTag";
-import LandingCard from "./components/LandingCard";
-import Socials from "./components/Socials";
+import BgImage from "../components/BgImage";
+import NameTag from "../components/NameTag";
+import LandingCard from "../components/LandingCard";
+import Socials from "../components/Socials";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "../styles/Home.module.css";

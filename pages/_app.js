@@ -1,5 +1,5 @@
 import { AnimatePresence } from "framer-motion";
-import Layout from "./components/Layout";
+import Layout from "../components/Layout";
 
 import "bootstrap/dist/css/bootstrap.css";
 import "../styles/globals.css";

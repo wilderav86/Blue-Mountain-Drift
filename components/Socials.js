@@ -7,10 +7,16 @@ const Socials = () => {
     <div>
       <h2 className="heading light">{heading}</h2>
       <div>
-        <Link href="https://www.instagram.com/blue_mountain_drift/?hl=en">
+        <Link
+          href="https://www.instagram.com/blue_mountain_drift/?hl=en"
+          passHref
+        >
           <p>Logo</p>
         </Link>
-        <Link href="https://www.instagram.com/mattmilesflyfishing/?hl=en">
+        <Link
+          href="https://www.instagram.com/mattmilesflyfishing/?hl=en"
+          passHref
+        >
           <p>mattlogo</p>
         </Link>
       </div>

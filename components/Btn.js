@@ -6,10 +6,8 @@ import { useEffect } from "react";
 //Link and name to be passed as object called btnData with name and link from parent component
 
 const Btn = ({ btnData }) => {
-  console.log(btnData.link);
-
   return (
-    <Link href={btnData.link}>
+    <Link href={btnData.link} passHref>
       <Button
         as={motion.button}
         whileHover={{ scale: 1.1 }}
