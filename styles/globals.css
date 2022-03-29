@@ -1,4 +1,4 @@
-html,
+/* html,
 body {
   padding: 0;
   margin: 0;
@@ -13,4 +13,87 @@ a {
 
 * {
   box-sizing: border-box;
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&family=Oswald&display=swap");
+
+/* Landing Page Background Colors */
+
+.about-card {
+  background: #3d4d6d;
+}
+
+.packages-card {
+  background: #9ba3bc;
+}
+
+.contact-card {
+  background: #9bacba;
+}
+/* Global styles */
+
+.banner {
+  font-family: "oswald";
+
+  text-align: center;
+  font-size: clamp(3rem, 4vw, 6rem);
+  margin-bottom: 8%;
+  text-shadow: -1px 1px 0 #000;
+}
+
+.banner.light {
+  color: #f1f1f1;
+}
+
+.banner.dark {
+  color: #3d4d6d;
+}
+
+.heading {
+  font-family: "oswald";
+  text-align: center;
+  font-size: clamp(2rem, 3vw, 3rem);
+}
+
+.heading.light {
+  color: #f1f1f1;
+}
+
+.heading.dark {
+  color: #3d4d6d;
+}
+
+.body {
+  font-family: "old standard TT";
+
+  text-align: center;
+  font-size: clamp(1.2rem, 2.5vw, 2rem);
+}
+
+.body.light {
+  color: #f1f1f1;
+}
+
+.body.dark {
+  color: #3d4d6d;
+}
+
+.btn-custom {
+  background: #eae691 !important;
+  color: #3d4d6d !important;
+  font-family: "oswald";
+}
+
+.container.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
