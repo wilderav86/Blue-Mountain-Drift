@@ -24,12 +24,10 @@ const LandingCard = ({ data }) => {
               alt="landing image"
             />
           </div>
-
           {header !== "" && <h2 className="heading light">{header}</h2>}
           {body !== "" && <p className="body light">{body}</p>}
           <Btn btnData={btnData} />
         </div>
-        {console.log("i rendered")}
       </div>
     )
   );

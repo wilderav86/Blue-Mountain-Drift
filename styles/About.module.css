@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  position: relative;
+  width: 100vw;
+  height: 40vh;
+}
+
+.imageContainer {
+  position: absolute;
+  width: 100vw;
+  height: auto;
+  z-index: -10;
+}
+
+.heading {
+  font-family: "oswald";
+  text-align: center;
+  font-size: clamp(2rem, 6vw, 6rem);
+  margin-left: 6%;
+  text-shadow: -1px 1px 0 #000;
+  color: #3d4d6d;
+}
+
+.content {
+}

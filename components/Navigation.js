@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { Nav, Navbar, Container, NavDropdown } from "react-bootstrap";
+import { Nav, Navbar, Container } from "react-bootstrap";
 
 const Navigation = () => {
   const pages = [
