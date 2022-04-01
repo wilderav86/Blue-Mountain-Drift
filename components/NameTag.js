@@ -6,9 +6,9 @@ const NameTag = () => {
 
   return (
     <div className={styles.nameTagContainer}>
-      <div className="container row">
+      <div>
         logo placeholder
-        <div className="container column">
+        <div>
           <h2 className="heading light">{name}</h2>
           <p className="body light">{title}</p>
         </div>

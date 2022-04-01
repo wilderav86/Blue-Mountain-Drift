@@ -2,7 +2,7 @@ import Navigation from "./Navigation";
 
 const Layout = ({ children }) => {
   return (
-    <div>
+    <div className="layout">
       <Navigation />
       {children}
     </div>

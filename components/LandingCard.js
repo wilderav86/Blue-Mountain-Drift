@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
+
 import Btn from "./Btn";
 
 const LandingCard = ({ data }) => {

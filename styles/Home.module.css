@@ -8,6 +8,7 @@
 
 .bgImage {
   position: absolute;
+
   z-index: -10;
 }
 
@@ -37,4 +38,5 @@
   width: 100vw;
   height: auto;
   overflow: hidden;
+  /* max-width: 600px; */
 }
