@@ -15,6 +15,7 @@ export default function Home() {
     header: "",
     body: "Brief description. A longer Bio will live on your about page",
     btnData: { name: "MEET MIKE", link: "/about" },
+    id: styles.one,
   };
 
   const packagesCard = {
@@ -23,6 +24,7 @@ export default function Home() {
     header: "LET US TAKE YOU ON A TRIP",
     body: "A description of whats included in your service. This will link to the trip packages page. This is kinda like an elevator pitch to give people an idea of what you do",
     btnData: { name: "VIEW TRIP PACKAGES", link: "/packages" },
+    id: styles.two,
   };
 
   const contactCard = {
@@ -31,6 +33,7 @@ export default function Home() {
     header: "PLAN YOUR NEXT TRIP WITH US",
     body: "",
     btnData: { name: "CONTACT", link: "/contact" },
+    id: styles.three,
   };
 
   return (

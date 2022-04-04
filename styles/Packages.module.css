@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&family=Oswald&display=swap");
 
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -10,7 +15,7 @@
 
 .containerRow {
   display: flex;
-
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -28,7 +33,7 @@
   max-width: 800px;
   z-index: 10;
   font-family: "oswald";
-  color: #3d4d6d;
+  color: #f1f1f1;
   text-align: left;
   font-size: clamp(1rem, 6vw, 3rem);
   margin-left: -45%;
@@ -47,7 +52,9 @@
 .card {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   width: 90%;
+  height: 275px;
   background: #e7ebf0;
   padding: 15px;
   margin: 15px;
@@ -63,11 +70,50 @@
 .title {
   font-family: "oswald";
   text-align: center;
-  font-size: clamp(2rem, 4vw, 4rem);
+  font-size: clamp(2rem, 2vw, 2.5rem);
+}
+
+.info {
+  font-family: '"Old Standard TT"';
+
+  font-size: clamp(1.2rem, 1.5vw, 1.3rem);
 }
 
 .btn {
   width: 40%;
+}
+
+/* What to bring */
+
+#whatToBringColor {
+  background-color: #9ba3bc;
+}
+
+.whatToBring {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.whatToBringImage {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  max-width: 800px;
+  align-self: center;
+  overflow: hidden;
+}
+
+.whatToBringHeading {
+  position: absolute;
+  max-width: 800px;
+  z-index: 10;
+  font-family: "oswald";
+  color: #f1f1f1;
+  text-align: left;
+  margin-top: 3%;
+  text-shadow: -1px 1px 0 #000;
+  font-size: clamp(2rem, 6vw, 3rem);
 }
 
 @media (min-width: 800px) {
@@ -78,16 +124,37 @@
   } */
 
   .heading {
-    margin-left: -400px;
-    margin-top: 100px;
+    margin-top: 6%;
+    margin-left: 50px;
+    width: 100%;
+    height: 40%;
+
+    /* margin-bottom: 0vh; */
   }
 
   .card {
-    width: 25%;
+    width: 30%;
+    height: 300px;
   }
 
   .image {
     margin-top: 5%;
     border-radius: 30px;
+  }
+
+  .whatToBring {
+    flex-direction: row;
+    max-width: 75vw;
+  }
+
+  .whatToBringImage {
+    max-width: 500px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+
+  .whatToBringHeading {
+    position: relative;
+    width: 55vw;
   }
 }

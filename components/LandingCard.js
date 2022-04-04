@@ -7,27 +7,28 @@ const LandingCard = ({ data }) => {
   //content provide by props from parent element
 
   //required props:
-  const { style, image, header, body, btnData } = data;
-  console.log(data);
+  const { style, image, header, body, btnData, id } = data;
 
   return (
-    Object.keys(data).length === 5 && (
+    Object.keys(data).length === 6 && (
       <div className={style}>
-        <div className={styles.landingCardContainer}>
+        <div id={id} className={styles.landingCardContainer}>
           <div className={styles.landingCardImage}>
             <Image
               src={image}
-              width="100%"
-              height="70%"
+              width="90%"
+              height="60%"
               layout="responsive"
               objectFit="contain"
-              objectPosition="top"
+              // objectPosition="top"
               alt="landing image"
             />
           </div>
-          {header !== "" && <h2 className="heading light">{header}</h2>}
-          {body !== "" && <p className="body light">{body}</p>}
-          <Btn btnData={btnData} />
+          <div className={styles.containerColumn}>
+            {header !== "" && <h2 className="heading light">{header}</h2>}
+            {body !== "" && <p className="body light">{body}</p>}
+            <Btn btnData={btnData} />
+          </div>
         </div>
       </div>
     )

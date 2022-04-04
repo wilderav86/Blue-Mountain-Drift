@@ -28,6 +28,18 @@ ul {
 .contact-card {
   background: #9bacba;
 }
+
+/* Desktop Layout */
+
+@media (min-width: 800px) {
+  .about-card,
+  .packages-card,
+  .contact-card {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 /* Global styles */
 
 .banner {

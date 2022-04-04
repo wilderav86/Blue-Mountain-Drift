@@ -1,5 +1,6 @@
 import Image from "next/image";
 import PackageCard from "../components/PackageCard";
+import WhatToBring from "../components/whatToBring";
 
 import styles from "../styles/Packages.module.css";
 
@@ -65,21 +66,24 @@ const Packages = () => {
   });
 
   return (
-    <div className={styles.container}>
-      <div className={styles.image}>
-        <Image
-          src="/aboutPageBG.jpg"
-          width="100%"
-          height="70%"
-          layout="responsive"
-          objectFit="contain"
-          objectPosition="top"
-          priority
-          alt="packages image"
-        />
+    <div className={styles.pageContainer}>
+      <div className={styles.container}>
+        <div className={styles.image}>
+          <Image
+            src="/packagePageBG.jpg"
+            width="90%"
+            height="60%"
+            layout="responsive"
+            objectFit="contain"
+            // objectPosition="top"
+            priority
+            alt="packages image"
+          />
+        </div>
+        <div className={styles.heading}>{heading}</div>
+        <div className={styles.cardContainer}>{renderPackageCards}</div>
       </div>
-      <div className={styles.heading}>{heading}</div>
-      <div className={styles.cardContainer}>{renderPackageCards}</div>
+      <WhatToBring />
     </div>
   );
 };

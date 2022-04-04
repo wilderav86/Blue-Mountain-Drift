@@ -30,6 +30,12 @@
   padding-bottom: 10%;
 }
 
+.containerColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .aboutCard {
   background: #3d4d6d;
 }
@@ -39,4 +45,26 @@
   height: auto;
   overflow: hidden;
   /* max-width: 600px; */
+}
+
+@media (min-width: 800px) {
+  .landingCardContainer {
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 8%;
+    width: 75vw;
+  }
+
+  .containerColumn {
+    width: 50%;
+  }
+
+  #two {
+    flex-direction: row-reverse;
+  }
+
+  .landingCardImage {
+    width: 50%;
+    align-self: center;
+  }
 }
