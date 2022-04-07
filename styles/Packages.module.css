@@ -47,6 +47,7 @@
   justify-content: center;
   flex-wrap: wrap;
   max-width: 1000px;
+  margin: 5%;
 }
 
 .card {
@@ -93,12 +94,12 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  padding-bottom: 6%;
 }
 
 .whatToBringImage {
   position: relative;
   width: 100%;
-  height: 70vh;
   max-width: 800px;
   align-self: center;
   overflow: hidden;
@@ -111,9 +112,45 @@
   font-family: "oswald";
   color: #f1f1f1;
   text-align: left;
-  margin-top: 3%;
+  margin: 4%;
+
   text-shadow: -1px 1px 0 #000;
   font-size: clamp(2rem, 6vw, 3rem);
+}
+
+.whatToBringInfo {
+  font-family: '"Old Standard TT"';
+  color: #f1f1f1;
+  font-size: clamp(1.2rem, 2vw, 1.4rem);
+  align-self: center;
+  margin: 5%;
+}
+
+.buttons {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.desktopLayout {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+}
+
+/* Fine Print */
+
+.content {
+  width: 70vw;
+}
+
+.finePrint {
+  font-family: '"Old Standard TT"';
+  color: #f1f1f1;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  margin: 8%;
 }
 
 @media (min-width: 800px) {
@@ -151,10 +188,23 @@
     max-width: 500px;
     margin-top: 3%;
     margin-bottom: 3%;
+    border-radius: 15px;
   }
 
   .whatToBringHeading {
     position: relative;
+    text-align: center;
     width: 55vw;
+  }
+
+  .whatToBringInfo {
+    align-self: center;
+    margin-left: 15%;
+  }
+}
+
+@media (max-width: 800px) {
+  .whatToBringImage {
+    height: 65vh;
   }
 }

@@ -27,13 +27,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 10%;
+  padding-bottom: 7%;
 }
 
 .containerColumn {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  margin: 5%;
 }
 
 .aboutCard {
@@ -44,6 +46,7 @@
   width: 100vw;
   height: auto;
   overflow: hidden;
+  border-radius: 15px;
   /* max-width: 600px; */
 }
 

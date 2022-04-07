@@ -1,6 +1,7 @@
 import Image from "next/image";
 import PackageCard from "../components/PackageCard";
 import WhatToBring from "../components/whatToBring";
+import FinePrint from "../components/FinePrint";
 
 import styles from "../styles/Packages.module.css";
 
@@ -21,7 +22,12 @@ const Packages = () => {
     },
     {
       title: "FULL DAY DUO",
-      info: ["2 Angler", "Float or Wade", "Equipment Provided*"],
+      info: [
+        "2 Angler",
+        "Float or Wade",
+        "Equipment Provided*",
+        "Lunch and drinks included",
+      ],
       price: "$480",
     },
     {
@@ -34,17 +40,7 @@ const Packages = () => {
       info: ["2 Angler", "Float or Wade", "Equipment Provided*"],
       price: "$380",
     },
-    {
-      title: "5 HOUR TRIP",
-      info: [
-        "1 or 2 Angler",
-        "Weldon NC – Striped Bass",
-        "Jet Boat",
-        "Equipment Provided*",
-        "Morning or Evening",
-      ],
-      price: "$500",
-    },
+
     {
       title: "FLY TYING",
       info: ["1 Hour Class"],
@@ -84,6 +80,7 @@ const Packages = () => {
         <div className={styles.cardContainer}>{renderPackageCards}</div>
       </div>
       <WhatToBring />
+      <FinePrint />
     </div>
   );
 };

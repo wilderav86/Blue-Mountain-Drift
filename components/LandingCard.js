@@ -20,7 +20,6 @@ const LandingCard = ({ data }) => {
               height="60%"
               layout="responsive"
               objectFit="contain"
-              // objectPosition="top"
               alt="landing image"
             />
           </div>

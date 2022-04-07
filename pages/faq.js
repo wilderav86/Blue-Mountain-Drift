@@ -26,7 +26,7 @@ const Faq = () => {
     },
     {
       q: "What should I wear?",
-      a: "Winter can range from 60° to 30° degrees F for daytime highs.  Spring daytime highs 50° to 80° degrees. Summer daytime highs range from 75° to 90° degrees. Fall daytime highs range from 50° to 70° degrees. Cool to cold temps, dressing in layers is best so you can easily remove or add clothing. Warm to hot temps, quick dry light clothing is best.",
+      a: "Winter can range from 60° to 30°F for daytime highs.  Spring daytime highs 50° to 80° degrees. Summer daytime highs range from 75° to 90° degrees. Fall daytime highs range from 50° to 70° degrees. Cool to cold temps, dressing in layers is best so you can easily remove or add clothing. Warm to hot temps, quick dry light clothing is best.",
     },
     {
       q: "Which weight fly rod for the different species?",
