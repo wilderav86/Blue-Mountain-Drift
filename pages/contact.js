@@ -33,13 +33,13 @@ const Contact = () => {
           <input type="hidden" name="contact-form" value="contact" />
           <Row>
             <Col>
-              <Form.Group className={styles.first}>
+              <Form.Group className={styles.first} controlId="First name">
                 <Form.Label>First name</Form.Label>
                 <Form.Control required type="text" />
               </Form.Group>
             </Col>
             <Col>
-              <Form.Group className={styles.last}>
+              <Form.Group className={styles.last} controlId="Last-name">
                 <Form.Label>Last name</Form.Label>
                 <Form.Control required type="text" />
               </Form.Group>
@@ -53,14 +53,14 @@ const Contact = () => {
               </Form.Group>
             </Col>
             <Col>
-              <Form.Group className={styles.phone}>
+              <Form.Group className={styles.phone} controlId="Phone number">
                 <Form.Label>Phone number</Form.Label>
                 <Form.Control type="number" />
               </Form.Group>
             </Col>
           </Row>
           <Row>
-            <Form.Group className="mb-3" controlId="formEvent">
+            <Form.Group className="mb-3" controlId="Message">
               <Form.Label>Message</Form.Label>
               <Form.Control
                 as="textarea"
@@ -73,7 +73,7 @@ const Contact = () => {
             </Form.Group>
           </Row>
           <Row>
-            <Form.Group className="mb-3">
+            <Form.Group className="mb-3" controlId="tripDropDown">
               <Form.Select defaultValue="">
                 <option value="" disabled>
                   Choose your trip
@@ -87,7 +87,7 @@ const Contact = () => {
             </Form.Group>
           </Row>
           <Row>
-            <Form.Group className="mb-3">
+            <Form.Group className="mb-3" controlId="fishDropDown">
               <Form.Select>
                 <option value="" disabled selected>
                   Choose your fish
@@ -99,7 +99,7 @@ const Contact = () => {
             </Form.Group>
           </Row>
           <Row>
-            <Form.Group className="mb-3">
+            <Form.Group className="mb-3" controlId="waterDropDown">
               <Form.Select>
                 <option value="" disabled selected>
                   Choose your water
