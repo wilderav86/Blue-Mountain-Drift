@@ -29,19 +29,25 @@ const Contact = () => {
   return (
     <div className={styles.container}>
       <div className={styles.form}>
-        <Form name="contact" method="POST" data-netlify="true">
+        <Form
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+          onSubmit="submit"
+        >
           <input type="hidden" name="contact-form" value="contact" />
           <Row>
             <Col>
               <Form.Group className={styles.first} controlId="First name">
                 <Form.Label>First name</Form.Label>
-                <Form.Control required type="text" />
+                <Form.Control required type="text" name="First name" />
               </Form.Group>
             </Col>
             <Col>
               <Form.Group className={styles.last} controlId="Last-name">
                 <Form.Label>Last name</Form.Label>
-                <Form.Control required type="text" />
+                <Form.Control required type="text" name="Last name" />
               </Form.Group>
             </Col>
           </Row>
@@ -49,7 +55,12 @@ const Contact = () => {
             <Col>
               <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Label>Email address</Form.Label>
-                <Form.Control required type="email" placeholder="Enter email" />
+                <Form.Control
+                  required
+                  type="email"
+                  placeholder="Enter email"
+                  name="email"
+                />
               </Form.Group>
             </Col>
             <Col>
@@ -88,8 +99,8 @@ const Contact = () => {
           </Row>
           <Row>
             <Form.Group className="mb-3" controlId="fishDropDown">
-              <Form.Select>
-                <option value="" disabled selected>
+              <Form.Select defaultValue="">
+                <option value="" disabled>
                   Choose your fish
                 </option>
                 {fishOptions.map((option, id) => (
@@ -100,8 +111,8 @@ const Contact = () => {
           </Row>
           <Row>
             <Form.Group className="mb-3" controlId="waterDropDown">
-              <Form.Select>
-                <option value="" disabled selected>
+              <Form.Select defaultValue="">
+                <option value="" disabled>
                   Choose your water
                 </option>
                 {waterOptions.map((option, id) => (
