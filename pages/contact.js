@@ -79,12 +79,12 @@ const Contact = () => {
           </Row>
           <Row>
             <Form.Group className="mb-3" controlId="tripDropDown">
-              <Form.Select defaultValue="">
+              <Form.Select id="trip option" name="Trip option" defaultValue="">
                 <option value="" disabled>
                   Choose your trip
                 </option>
                 {tripOptions.map((option, id) => (
-                  <option key={`trip${id}`} value={id + 1}>
+                  <option value={option} key={`trip${id}`}>
                     {option}
                   </option>
                 ))}
@@ -107,12 +107,14 @@ const Contact = () => {
           </Row>
           <Row>
             <Form.Group className="mb-3" controlId="waterDropDown">
-              <Form.Select defaultValue="">
+              <Form.Select id="wish option" name="Water option" defaultValue="">
                 <option value="" disabled>
                   Choose your water
                 </option>
                 {waterOptions.map((option, id) => (
-                  <option key={`water${id}`}>{option}</option>
+                  <option value={option} key={`water${id}`}>
+                    {option}
+                  </option>
                 ))}
               </Form.Select>
             </Form.Group>
