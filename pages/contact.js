@@ -80,7 +80,6 @@ const Contact = () => {
                 placeholder="Tell us more about the adventure you'd like to take, as well as
                 your preferred dates."
               />
-              <Form.Text className="text-muted"></Form.Text>
             </Form.Group>
           </Row>
           <Row>
@@ -99,7 +98,7 @@ const Contact = () => {
           </Row>
           <Row>
             <Form.Group className="mb-3" controlId="fishDropDown">
-              <Form.Select defaultValue="">
+              <Form.Select name="fish option" defaultValue="">
                 <option value="" disabled>
                   Choose your fish
                 </option>
