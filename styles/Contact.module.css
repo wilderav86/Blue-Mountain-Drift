@@ -10,3 +10,10 @@
 .form {
   width: 80%;
 }
+
+.label {
+  font-family: "Oswald";
+  text-align: center;
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+  color: #f1f1f1;
+}
