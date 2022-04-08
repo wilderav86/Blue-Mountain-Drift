@@ -93,7 +93,7 @@ const Contact = () => {
           </Row>
           <Row>
             <Form.Group className="mb-3" controlId="fishDropDown">
-              <Form.Select name="Fish option" defaultValue="">
+              <Form.Select id="Fish option" name="Fish option" defaultValue="">
                 <option value="" disabled>
                   Choose your fish
                 </option>
