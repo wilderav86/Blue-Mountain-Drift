@@ -55,12 +55,7 @@ const Contact = () => {
             <Col>
               <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Label>Email address</Form.Label>
-                <Form.Control
-                  required
-                  type="email"
-                  placeholder="Enter email"
-                  name="email"
-                />
+                <Form.Control required type="email" name="email" />
               </Form.Group>
             </Col>
             <Col>
@@ -98,12 +93,14 @@ const Contact = () => {
           </Row>
           <Row>
             <Form.Group className="mb-3" controlId="fishDropDown">
-              <Form.Select name="fish option" defaultValue="">
+              <Form.Select name="Fish option" defaultValue="">
                 <option value="" disabled>
                   Choose your fish
                 </option>
                 {fishOptions.map((option, id) => (
-                  <option key={`fish${id}`}>{option}</option>
+                  <option value={option} key={`fish${id}`}>
+                    {option}
+                  </option>
                 ))}
               </Form.Select>
             </Form.Group>
