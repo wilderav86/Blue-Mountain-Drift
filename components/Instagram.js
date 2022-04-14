@@ -41,7 +41,7 @@ const Instagram = () => {
 
   return (
     <div>
-      <h1>instagram</h1>
+      {/* <h1>instagram</h1>
       {loading ? (
         <h3>Loading...</h3>
       ) : (
@@ -52,7 +52,7 @@ const Instagram = () => {
             <Image loader={() => src} src={src} height={300} width={300} />
           );
         })
-      )}
+      )} */}
     </div>
   );
 };
