@@ -39,21 +39,21 @@ const Navigation = () => {
   });
 
   return (
-    <div className="nav-container">
-      <Navbar bg="light" expand="lg">
-        <Container>
-          <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-            <Navbar.Brand href="/">
-              <Image src="/logo.png" height={100} width={100} />
-            </Navbar.Brand>
-          </motion.div>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">{renderLinks}</Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
-    </div>
+    // <div className="nav-container">
+    <Navbar bg="light" expand="lg">
+      <Container>
+        <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+          <Navbar.Brand href="/">
+            <Image src="/logo.png" height={100} width={100} />
+          </Navbar.Brand>
+        </motion.div>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">{renderLinks}</Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+    // </div>
   );
 
   // return (
