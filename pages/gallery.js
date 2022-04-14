@@ -29,6 +29,7 @@ const Gallery = ({ images }) => {
             width={800}
             // layout="responsive"
             objectFit="contain"
+            alt="instagram image"
           />
         </div>
 
