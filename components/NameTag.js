@@ -1,4 +1,5 @@
 import styles from "../styles/Home.module.css";
+import Image from "next/image";
 
 const NameTag = () => {
   const name = "MIKE RENNIE";
@@ -7,10 +8,15 @@ const NameTag = () => {
   return (
     <div className={styles.nameTagContainer}>
       <div>
-        logo placeholder
-        <div>
-          <h2 className="heading light">{name}</h2>
-          <p className="body light">{title}</p>
+        <h2 className="heading light">{name}</h2>
+        <p className="body light">{title}</p>
+      </div>
+      <div className={styles.logoContainer}>
+        <div className={styles.logo}>
+          <Image src="/logo.png" height={200} width={200} />
+        </div>
+        <div className={styles.logo}>
+          <Image src="/milesLogo.png" height={200} width={500} />
         </div>
       </div>
     </div>

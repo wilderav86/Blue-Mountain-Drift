@@ -2,9 +2,6 @@ import styles from "../../styles/Contact.module.css";
 import { Form, Button } from "react-bootstrap";
 import { Row, Col } from "react-bootstrap";
 import { motion } from "framer-motion";
-import Name from "./Name";
-import EmailPhone from "./EmailPhone";
-import Message from "./Message";
 
 const ContactForm = () => {
   const tripOptions = [
@@ -37,9 +34,46 @@ const ContactForm = () => {
         onSubmit="submit"
       >
         <input type="hidden" name="contact-form" value="contact" />
-        <Name />
-        <EmailPhone />
-        <Message />
+        <Row>
+          <Col>
+            <Form.Group className={styles.first} controlId="First name">
+              <Form.Label className={styles.label}>First name</Form.Label>
+              <Form.Control required type="text" name="First name" />
+            </Form.Group>
+          </Col>
+          <Col>
+            <Form.Group className={styles.last} controlId="Last-name">
+              <Form.Label className={styles.label}>Last name</Form.Label>
+              <Form.Control required type="text" name="Last name" />
+            </Form.Group>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <Form.Group className="mb-3" controlId="formBasicEmail">
+              <Form.Label className={styles.label}>Email address</Form.Label>
+              <Form.Control required type="email" name="email" />
+            </Form.Group>
+          </Col>
+          <Col>
+            <Form.Group className={styles.phone} controlId="Phone number">
+              <Form.Label className={styles.label}>Phone number</Form.Label>
+              <Form.Control name="phone number" />
+            </Form.Group>
+          </Col>
+        </Row>
+        <Row>
+          <Form.Group className="mb-3" controlId="Message">
+            <Form.Label className={styles.label}>Message</Form.Label>
+            <Form.Control
+              as="textarea"
+              rows="3"
+              name="trip-info"
+              placeholder="Tell us more about the adventure you'd like to take, as well as
+          your preferred dates."
+            />
+          </Form.Group>
+        </Row>
         <Row>
           <Form.Group className="mb-3" controlId="tripDropDown">
             <Form.Select id="trip option" name="Trip option" defaultValue="">

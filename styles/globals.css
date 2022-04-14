@@ -42,6 +42,10 @@ ul {
 
 /* Global styles */
 
+.nav-container {
+  height: 10vh;
+}
+
 .banner {
   font-family: "Oswald";
 

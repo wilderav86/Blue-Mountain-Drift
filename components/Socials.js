@@ -1,23 +1,39 @@
 import Link from "next/link";
+import Image from "next/image";
+import { motion } from "framer-motion";
+
+import styles from "../styles/Home.module.css";
 
 const Socials = () => {
   const heading = "CHECK US OUT ON INSTAGRAM";
 
   return (
-    <div>
+    <div className={styles.socialsContainer}>
       <h2 className="heading light">{heading}</h2>
-      <div>
+      <div className={styles.logoContainer}>
         <Link
           href="https://www.instagram.com/blue_mountain_drift/?hl=en"
           passHref
         >
-          <p>Logo</p>
+          <motion.div
+            className={styles.logo}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
+            <Image src="/logo.png" height={250} width={250} />
+          </motion.div>
         </Link>
         <Link
           href="https://www.instagram.com/mattmilesflyfishing/?hl=en"
           passHref
         >
-          <p>mattlogo</p>
+          <motion.div
+            className={styles.milesLogo}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
+            <Image src="/milesLogo.png" height={200} width={500} />
+          </motion.div>
         </Link>
       </div>
     </div>

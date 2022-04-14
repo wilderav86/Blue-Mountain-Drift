@@ -1,6 +1,8 @@
 import React from "react";
 import Link from "next/link";
 import { Nav, Navbar, Container } from "react-bootstrap";
+import Image from "next/image";
+import { motion } from "framer-motion";
 
 const Navigation = () => {
   const pages = [
@@ -37,15 +39,21 @@ const Navigation = () => {
   });
 
   return (
-    <Navbar bg="light" expand="lg">
-      <Container>
-        <Navbar.Brand href="/">LOGO PLACEHOLDER</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">{renderLinks}</Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+    <div className="nav-container">
+      <Navbar bg="light" expand="lg">
+        <Container>
+          <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+            <Navbar.Brand href="/">
+              <Image src="/logo.png" height={100} width={100} />
+            </Navbar.Brand>
+          </motion.div>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="me-auto">{renderLinks}</Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+    </div>
   );
 
   // return (

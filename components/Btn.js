@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { Button } from "react-bootstrap";
 import { motion } from "framer-motion";
-import { useEffect } from "react";
 
 //Link and name to be passed as object called btnData with name and link from parent component
 

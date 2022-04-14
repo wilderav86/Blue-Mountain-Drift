@@ -1,6 +1,6 @@
 .bgContainer {
   display: flex;
-  height: 92vh;
+  height: 90vh;
   position: relative;
   justify-content: center;
   align-items: flex-end;
@@ -12,18 +12,38 @@
   z-index: -10;
 }
 
-/* .banner {
-  font-size: clamp(3rem, 4vw, 6rem);
-  margin-bottom: 8%;
-  text-shadow: -1px 1px 0 #000;
-} */
+/* Name Tag */
 
 .nameTagContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
   background: #9bacba;
+  padding-top: 10%;
+  padding-bottom: 10%;
 }
+
+.logoContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo {
+  margin: 1%;
+}
+
+.milesLogo {
+  border-radius: 15px;
+}
+
+/* Landing Card */
 
 .landingCardContainer {
   display: flex;
+
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -32,9 +52,12 @@
 
 .containerColumn {
   display: flex;
+
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
   margin: 5%;
 }
 
@@ -46,16 +69,29 @@
   width: 100vw;
   height: auto;
   overflow: hidden;
-  border-radius: 15px;
-  /* max-width: 600px; */
 }
 
+/* Socials */
+
+.socialsContainer {
+  background: #3d4d6d;
+  padding: 5%;
+}
+
+/* max-width: 800px; */
 @media (min-width: 800px) {
   .landingCardContainer {
     flex-direction: row;
     justify-content: center;
     padding-top: 8%;
     width: 75vw;
+  }
+
+  .logoContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
   }
 
   .containerColumn {
@@ -69,5 +105,6 @@
   .landingCardImage {
     width: 50%;
     align-self: center;
+    border-radius: 15px;
   }
 }

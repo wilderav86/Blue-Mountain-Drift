@@ -1,0 +1,17 @@
+.galleryContainer {
+  background: #9ba3bc;
+  height: 100vh;
+}
+
+.carouselContainer {
+  padding-top: 90px;
+  height: 100vh;
+}
+
+.caption {
+  color: rgb(223, 217, 217);
+}
+
+.image {
+  max-height: 70vh;
+}
