@@ -20,7 +20,7 @@ const Socials = () => {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
-            <Image src="/logo.png" height={250} width={250} />
+            <Image src="/logo.png" height={250} width={250} alt="logo" />
           </motion.div>
         </Link>
         <Link
@@ -32,7 +32,7 @@ const Socials = () => {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
-            <Image src="/milesLogo.png" height={200} width={500} />
+            <Image src="/milesLogo.png" height={200} width={500} alt="logo" />
           </motion.div>
         </Link>
       </div>

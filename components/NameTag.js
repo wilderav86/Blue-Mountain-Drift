@@ -13,10 +13,10 @@ const NameTag = () => {
       </div>
       <div className={styles.logoContainer}>
         <div className={styles.logo}>
-          <Image src="/logo.png" height={200} width={200} />
+          <Image src="/logo.png" height={200} width={200} alt="logo" />
         </div>
         <div className={styles.logo}>
-          <Image src="/milesLogo.png" height={200} width={500} />
+          <Image src="/milesLogo.png" height={200} width={500} alt="logo" />
         </div>
       </div>
     </div>
