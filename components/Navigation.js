@@ -44,7 +44,7 @@ const Navigation = () => {
       <Container>
         <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
           <Navbar.Brand href="/">
-            <Image src="/logo.png" height={100} width={100} />
+            <Image src="/logo.png" height={100} width={100} priority />
           </Navbar.Brand>
         </motion.div>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

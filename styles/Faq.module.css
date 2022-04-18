@@ -1,3 +1,7 @@
+.outerContainer {
+  background: #e5e5e5;
+}
+
 .container {
   background: #e5e5e5;
   display: flex;

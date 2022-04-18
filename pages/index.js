@@ -7,7 +7,20 @@ import Socials from "../components/Socials";
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "../styles/Home.module.css";
 
-export default function Home() {
+export const getServerSideProps = async () => {
+  const res = await fetch(
+    "https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token=IGQVJXTDViVlgzNU9zb2JHZAWRXZAGt0QXhyLWFNTm5GbzNWWVZAIdm5NS1ppNldxc0drRElaTl90QVUxUGIwc1pxZAUFMUGZAmVk9yTFMydGh3UGdXSVg4X0lQNFBIOGxyNHRYSWo1d3RoSGwyZAm03YlFBbQZDZD"
+  );
+  const data = await res.json();
+
+  return {
+    props: { token: data },
+  };
+};
+
+export default function Home({ token }) {
+  // console.log(token);
+
   //Card data for LandingCard components:
   const aboutCard = {
     style: "about-card",

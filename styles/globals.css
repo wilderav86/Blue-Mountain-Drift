@@ -15,6 +15,14 @@ ul {
   list-style: none;
 }
 
+/* Carousel */
+
+.carousel-caption {
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
 /* Landing Page Background Colors */
 
 .about-card {

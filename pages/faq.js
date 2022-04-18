@@ -1,3 +1,5 @@
+import PageTransition from "../animations/PageTransition";
+
 import styles from "../styles/Faq.module.css";
 
 const Faq = () => {
@@ -52,9 +54,13 @@ const Faq = () => {
   });
 
   return (
-    <div className={styles.container}>
-      <h2 className="banner dark">{heading}</h2>
-      {renderQuestions}
+    <div className={styles.outerContainer}>
+      <PageTransition>
+        <div className={styles.container}>
+          <h2 className="banner dark">{heading}</h2>
+          {renderQuestions}
+        </div>
+      </PageTransition>
     </div>
   );
 };

@@ -1,15 +1,20 @@
+.outerContainer {
+  background: #9ba3bc;
+}
+
 .galleryContainer {
   background: #9ba3bc;
-  height: 100vh;
+  height: 90vh;
 }
 
 .carouselContainer {
-  padding-top: 90px;
-  height: 100vh;
+  padding-top: 70px;
+  height: 90vh;
 }
 
 .caption {
   color: rgb(223, 217, 217);
+  text-shadow: -1px 1px 1px #000;
 }
 
 .image {

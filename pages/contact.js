@@ -1,3 +1,4 @@
+import PageTransition from "../animations/PageTransition";
 import ContactForm from "../components/Form/ContactForm";
 import styles from "../styles/Contact.module.css";
 
@@ -23,8 +24,12 @@ const Contact = () => {
   ];
 
   return (
-    <div className={styles.container}>
-      <ContactForm />
+    <div className={styles.outerContainer}>
+      <PageTransition>
+        <div className={styles.container}>
+          <ContactForm />
+        </div>
+      </PageTransition>
     </div>
   );
 };

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import PageTransition from "../animations/PageTransition";
 import Btn from "../components/Btn";
 
 import styles from "../styles/About.module.css";
@@ -15,26 +16,30 @@ const About = () => {
   };
 
   return (
-    <div className={styles.container}>
-      <div className={styles.image}>
-        <Image
-          src="/aboutPageBG.jpg"
-          width="100%"
-          height="70%"
-          layout="responsive"
-          objectFit="contain"
-          objectPosition="top"
-          alt="about image"
-        />
-      </div>
-      <div className={styles.heading}>{heading}</div>
-      <div className={styles.content}>
-        <div className={styles.body}>{body}</div>
-        <div className={styles.buttons}>
-          <Btn btnData={contactBtn} />
-          <Btn btnData={instaBtn} />
+    <div className={styles.outerContainer}>
+      <PageTransition>
+        <div className={styles.container}>
+          <div className={styles.image}>
+            <Image
+              src="/aboutPageBG.jpg"
+              width="100%"
+              height="70%"
+              layout="responsive"
+              objectFit="contain"
+              objectPosition="top"
+              alt="about image"
+            />
+          </div>
+          <div className={styles.heading}>{heading}</div>
+          <div className={styles.content}>
+            <div className={styles.body}>{body}</div>
+            <div className={styles.buttons}>
+              <Btn btnData={contactBtn} />
+              <Btn btnData={instaBtn} />
+            </div>
+          </div>
         </div>
-      </div>
+      </PageTransition>
     </div>
   );
 };

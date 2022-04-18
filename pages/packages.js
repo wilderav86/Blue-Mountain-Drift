@@ -1,4 +1,5 @@
 import Image from "next/image";
+import PageTransition from "../animations/PageTransition";
 import PackageCard from "../components/PackageCard";
 import WhatToBring from "../components/whatToBring";
 import FinePrint from "../components/FinePrint";
@@ -62,25 +63,29 @@ const Packages = () => {
   });
 
   return (
-    <div className={styles.pageContainer}>
-      <div className={styles.container}>
-        <div className={styles.image}>
-          <Image
-            src="/packagePageBG.jpg"
-            width="90%"
-            height="60%"
-            layout="responsive"
-            objectFit="contain"
-            // objectPosition="top"
-            priority
-            alt="packages image"
-          />
+    <div className={styles.outerContainer}>
+      <PageTransition>
+        <div className={styles.pageContainer}>
+          <div className={styles.container}>
+            <div className={styles.image}>
+              <Image
+                src="/packagePageBG.jpg"
+                width="90%"
+                height="60%"
+                layout="responsive"
+                objectFit="contain"
+                // objectPosition="top"
+                priority
+                alt="packages image"
+              />
+            </div>
+            <div className={styles.heading}>{heading}</div>
+            <div className={styles.cardContainer}>{renderPackageCards}</div>
+          </div>
+          <WhatToBring />
+          <FinePrint />
         </div>
-        <div className={styles.heading}>{heading}</div>
-        <div className={styles.cardContainer}>{renderPackageCards}</div>
-      </div>
-      <WhatToBring />
-      <FinePrint />
+      </PageTransition>
     </div>
   );
 };

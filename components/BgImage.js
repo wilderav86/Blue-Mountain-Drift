@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { motion } from "framer-motion";
 import styles from "../styles/Home.module.css";
 
 const BgImage = () => {
@@ -9,7 +10,12 @@ const BgImage = () => {
   // const btnName = "Gallery";
 
   return (
-    <div className={styles.bgContainer}>
+    <motion.div
+      className={styles.bgContainer}
+      initial={{ opacity: 0 }}
+      transition={{ delay: 0.6, duration: 1, ease: "easeIn" }}
+      animate={{ opacity: 1 }}
+    >
       <div>
         <h1 className="banner light">{banner}</h1>
       </div>
@@ -24,7 +30,7 @@ const BgImage = () => {
           priority
         />
       </div>
-    </div>
+    </motion.div>
   );
 };
 
