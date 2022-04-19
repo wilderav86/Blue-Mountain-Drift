@@ -4,7 +4,7 @@ import { motion, useAnimation } from "framer-motion";
 
 const FadeInWhenVisible = ({ children }) => {
   const controls = useAnimation();
-  const [ref, inView] = useInView({ threshold: 0.5 });
+  const [ref, inView] = useInView({ threshold: 0.3 });
 
   useEffect(() => {
     if (inView) {

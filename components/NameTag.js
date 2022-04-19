@@ -10,7 +10,7 @@ const NameTag = () => {
 
   // Intersection Observer animation controls
   const controls = useAnimation();
-  const [ref, inView] = useInView({ threshold: 0.5 });
+  const [ref, inView] = useInView({ threshold: 0.3 });
 
   useEffect(() => {
     if (inView) {
@@ -38,7 +38,7 @@ const NameTag = () => {
             visible: { opacity: 1, x: 0 },
             hidden: {
               opacity: 0,
-              x: -200,
+              x: -100,
             },
           }}
         >
@@ -54,7 +54,7 @@ const NameTag = () => {
             visible: { opacity: 1, x: 0 },
             hidden: {
               opacity: 0,
-              x: 200,
+              x: 100,
             },
           }}
         >
