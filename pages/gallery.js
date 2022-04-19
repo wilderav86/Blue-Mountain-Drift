@@ -32,6 +32,8 @@ export const getStaticProps = async () => {
 };
 
 const Gallery = ({ images }) => {
+  // console.log(token);
+
   const renderCarouselItems = images.data.map((image, id) => {
     const src = image.media_url;
     return (
@@ -71,5 +73,3 @@ const Gallery = ({ images }) => {
 };
 
 export default Gallery;
-
-// IGQVJXTDViVlgzNU9zb2JHZAWRXZAGt0QXhyLWFNTm5GbzNWWVZAIdm5NS1ppNldxc0drRElaTl90QVUxUGIwc1pxZAUFMUGZAmVk9yTFMydGh3UGdXSVg4X0lQNFBIOGxyNHRYSWo1d3RoSGwyZAm03YlFBbQZDZD

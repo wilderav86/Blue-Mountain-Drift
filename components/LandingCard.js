@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
+import FadeInWhenVisible from "../animations/FadeInWhenVisible";
 
 import Btn from "./Btn";
 
@@ -12,23 +13,27 @@ const LandingCard = ({ data }) => {
   return (
     Object.keys(data).length === 6 && (
       <div className={style}>
-        <div id={id} className={styles.landingCardContainer}>
-          <div className={styles.landingCardImage}>
-            <Image
-              src={image}
-              width="90%"
-              height="60%"
-              layout="responsive"
-              objectFit="contain"
-              alt="landing image"
-            />
+        <FadeInWhenVisible>
+          <div className={style}>
+            <div id={id} className={styles.landingCardContainer}>
+              <div className={styles.landingCardImage}>
+                <Image
+                  src={image}
+                  width="90%"
+                  height="60%"
+                  layout="responsive"
+                  objectFit="contain"
+                  alt="landing image"
+                />
+              </div>
+              <div className={styles.containerColumn}>
+                {header !== "" && <h2 className="heading light">{header}</h2>}
+                {body !== "" && <p className="body light">{body}</p>}
+                <Btn btnData={btnData} />
+              </div>
+            </div>
           </div>
-          <div className={styles.containerColumn}>
-            {header !== "" && <h2 className="heading light">{header}</h2>}
-            {body !== "" && <p className="body light">{body}</p>}
-            <Btn btnData={btnData} />
-          </div>
-        </div>
+        </FadeInWhenVisible>
       </div>
     )
   );
