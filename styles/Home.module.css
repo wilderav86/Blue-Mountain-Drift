@@ -72,9 +72,11 @@
 }
 
 /* Socials */
+.socialsOuterContainer {
+  background: #3d4d6d;
+}
 
 .socialsContainer {
-  background: #3d4d6d;
   padding: 5%;
 }
 
