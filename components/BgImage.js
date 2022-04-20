@@ -29,6 +29,7 @@ const BgImage = () => {
           blurDataURL="data:..."
           placeholder="blur"
           quality={60}
+          sizes="320 640 750"
           alt="background"
           priority
         />
