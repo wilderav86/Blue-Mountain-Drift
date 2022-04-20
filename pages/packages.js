@@ -74,7 +74,9 @@ const Packages = () => {
                 height="60%"
                 layout="responsive"
                 objectFit="contain"
-                // objectPosition="top"
+                blurDataURL="data:..."
+                placeholder="blur"
+                quality={60}
                 priority
                 alt="packages image"
               />

@@ -1,5 +1,8 @@
 .outerContainer {
   background: #e5e5e5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .container {
@@ -7,6 +10,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  align-self: center;
+  justify-self: center;
+  padding-top: 10%;
+  padding-bottom: 10%;
 }
 
 .questions {
@@ -16,6 +23,7 @@
   margin: 2%;
   border: 2px solid #3d4d6d;
   border-radius: 15px;
+  max-width: 700px;
 }
 
 .question {

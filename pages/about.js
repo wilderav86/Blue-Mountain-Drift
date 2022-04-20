@@ -27,6 +27,9 @@ const About = () => {
               layout="responsive"
               objectFit="contain"
               objectPosition="top"
+              blurDataURL="data:..."
+              placeholder="blur"
+              quality={60}
               alt="about image"
             />
           </div>

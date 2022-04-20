@@ -16,9 +16,6 @@ const NameTag = () => {
     if (inView) {
       controls.start("visible");
     }
-    // if (!inView) {
-    //   controls.start("hidden");
-    // }
   }, [controls, inView]);
 
   return (

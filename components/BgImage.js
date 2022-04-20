@@ -26,6 +26,9 @@ const BgImage = () => {
           layout="fill"
           objectFit="cover"
           objectPosition="left 30% top 50%"
+          blurDataURL="data:..."
+          placeholder="blur"
+          quality={60}
           alt="background"
           priority
         />
