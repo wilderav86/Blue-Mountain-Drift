@@ -6,7 +6,7 @@ const FinePrint = () => {
       <div className={styles.content}>
         <h4 className={styles.finePrint}>
           <strong>
-            All trips require a $100 non-refundable deposit for each day booked.
+            All trips require a $200 non-refundable deposit for each day booked.
             Final payment is due at completion of services.
           </strong>
         </h4>

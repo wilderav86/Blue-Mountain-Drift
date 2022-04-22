@@ -13,7 +13,7 @@ export default function Home() {
     style: "about-card",
     image: "/aboutCardImage.jpg",
     header: "",
-    body: "Brief description. A longer Bio will live on your about page",
+    body: "A Central Virginia based fly fishing and light tackle fishing guide specializing in float trips for smallmouth, muskie and trout",
     btnData: { name: "MEET MIKE", link: "/about" },
     id: styles.one,
   };
@@ -22,7 +22,7 @@ export default function Home() {
     style: "packages-card",
     image: "/packagesCardImage.jpg",
     header: "LET US TAKE YOU ON A TRIP",
-    body: "A description of whats included in your service. This will link to the trip packages page. This is kinda like an elevator pitch to give people an idea of what you do",
+    body: "We are full service fly fishing guides providing year round fishing to some of Virginia's premier rivers. Whether you are a first time fly angler or avid fisherman, we can teach you from the ground up or help hone your skills. Let us show you some of the great fishing Virginia has to offer. From cool trout waters to hot summertime smallmouth fishing, we have you covered for a memorable day floating down some of Virginia's best waters.",
     btnData: { name: "VIEW TRIP PACKAGES", link: "/packages" },
     id: styles.two,
   };

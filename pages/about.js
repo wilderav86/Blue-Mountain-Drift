@@ -1,19 +1,18 @@
 import Image from "next/image";
 import PageTransition from "../animations/PageTransition";
 import Btn from "../components/Btn";
+import Link from "next/link";
+import { BsInstagram } from "react-icons/bs";
+import { motion } from "framer-motion";
 
 import styles from "../styles/About.module.css";
 
 const About = () => {
   const heading = "MEET MIKE";
   const body =
-    "This is a longer bio. Include things like how you got into fishing, other outdoor related hobbies, fish knowledge etc.";
+    "Mike Rennie is the Lead Guide at Matt Miles Fly Fishing. A native of Charlottesville, he grew up fly fishing in Central Virginia and has spent time in Brazil, Belize, and Northern Michigan chasing fish. Mike has a long standing relationship with Orvis Endorsed Guide Matt Miles and learned how to guide under him. Mike's passions are guiding, teaching, and being on the water. When he is off the water, he spends time tying flies for his local waters and taking photos.";
 
   const contactBtn = { name: "CONTACT", link: "/contact" };
-  const instaBtn = {
-    name: "SEE ME ON INSTAGRAM",
-    link: "https://www.instagram.com/mattmilesflyfishing/?hl=en",
-  };
 
   return (
     <div className={styles.outerContainer}>
@@ -38,7 +37,20 @@ const About = () => {
             <div className={styles.body}>{body}</div>
             <div className={styles.buttons}>
               <Btn btnData={contactBtn} />
-              <Btn btnData={instaBtn} />
+              <Link href="https://www.instagram.com/mattmilesflyfishing/?hl=en">
+                <motion.div
+                  className={styles.instaBtn}
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                  size="lg"
+                  variant="custom"
+                >
+                  <BsInstagram
+                    style={{ background: "#eae691", borderRadius: "16px" }}
+                    size={50}
+                  />
+                </motion.div>
+              </Link>
             </div>
           </div>
         </div>

@@ -31,7 +31,11 @@ const LandingCard = ({ data }) => {
               </div>
               <div className={styles.containerColumn}>
                 {header !== "" && <h2 className="heading light">{header}</h2>}
-                {body !== "" && <p className="body light">{body}</p>}
+                {body !== "" && (
+                  <div className={styles.body}>
+                    <p className="body light">{body}</p>
+                  </div>
+                )}
                 <Btn btnData={btnData} />
               </div>
             </div>

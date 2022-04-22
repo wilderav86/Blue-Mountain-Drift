@@ -10,6 +10,8 @@ const Packages = () => {
   const heading = "TRIP PACKAGES";
 
   // Card Data
+
+  //note: info must be passed as array
   const cardData = [
     {
       title: "FULL DAY SOLO",

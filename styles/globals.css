@@ -87,7 +87,7 @@ ul {
 
 .body {
   font-family: "Old Standard TT";
-
+  margin: 5%;
   text-align: center;
   font-size: clamp(1.1rem, 2.5vw, 1.5rem);
 }
