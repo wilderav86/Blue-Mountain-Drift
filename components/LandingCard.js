@@ -19,13 +19,13 @@ const LandingCard = ({ data }) => {
               <div className={styles.landingCardImage}>
                 <Image
                   src={image}
-                  width="90%"
-                  height="60%"
+                  width={600}
+                  height={400}
                   layout="responsive"
                   objectFit="contain"
                   blurDataURL={image}
                   placeholder="blur"
-                  quality={60}
+                  quality={50}
                   alt="landing image"
                 />
               </div>

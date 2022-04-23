@@ -65,7 +65,7 @@ const RiverInfo = () => {
             width="600px"
             height="400px"
             objectFit="contain"
-            blurDataURL="data:..."
+            blurDataURL={river.image}
             placeholder="blur"
             quality={60}
             alt="fish image"

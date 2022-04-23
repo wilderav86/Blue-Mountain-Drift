@@ -49,7 +49,7 @@ const FishInfo = () => {
             width="600px"
             height="400px"
             objectFit="contain"
-            blurDataURL="data:..."
+            blurDataURL={fish.image}
             placeholder="blur"
             quality={60}
             alt="fish image"
