@@ -11,7 +11,7 @@ const FishInfo = () => {
         "Because of that aggressive nature and strong fight, smallmouth bass are targeted by fishermen. Otherwise, they are typically one of the top predators in their ecosystems and don’t face many threats from other fish. But bigger bass, northern pike and muskellunge are common predators.",
       ],
       image: "/smallmouth.jpg",
-      id: "#smallmoouth",
+      id: "smallmouth",
     },
     {
       name: "Muskie",
@@ -21,7 +21,7 @@ const FishInfo = () => {
         "Muskie generally fall into one of, or a combination of, three distinct color phases: spotted, barred, or clear (no markings).",
       ],
       image: "/muskie.jpg",
-      id: "#muskie",
+      id: "muskie",
     },
     {
       name: "Trout",
@@ -32,14 +32,17 @@ const FishInfo = () => {
         "Typically, these fish occupy streams, lakes, creeks, and rivers with cool temperatures.",
       ],
       image: "/trout.jpg",
-      id: "#trout",
+      id: "trout",
     },
   ];
 
   const renderInfo = fishData.map((fish, key) => {
     return (
-      <div key={key} id={fish.id}>
-        <h3>{fish.name}</h3>
+      <div key={key}>
+        <div id={fish.id}>
+          <h3>{fish.name}</h3>
+        </div>
+
         <div className={styles.image}>
           <Image
             src={fish.image}

@@ -11,7 +11,7 @@ const RiverInfo = () => {
         "It contains many parks and other recreational attractions. Canoeing, fishing, kayaking, hiking, and swimming are some of the activities that people enjoy along the river during the summer. From the river's start in the Blue Ridge mountains to Richmond, numerous rapids and pools offer fishing and whitewater rafting. ",
       ],
       image: "/jamesRiver.jpg",
-      id: "#james",
+      id: "james",
     },
     {
       name: "Jackson River",
@@ -20,7 +20,7 @@ const RiverInfo = () => {
         "It's an excellent smallmouth bass, rock bass, rainbow trout, and brown trout fishery.",
       ],
       image: "/jacksonRiver.jpg",
-      id: "#jackson",
+      id: "jackson",
     },
     {
       name: "Staunton River",
@@ -29,7 +29,7 @@ const RiverInfo = () => {
         " Bird watchers, anglers, and hunters will enjoy the bounty of the river and its adjacent bottomlands. Canoeists can experience the challenging Fish Trap (Class III) and Cat Rock (Class II) rapids.",
       ],
       image: "/stauntonRiver.jpg",
-      id: "#staunton",
+      id: "staunton",
     },
     {
       name: "Maury River",
@@ -39,7 +39,7 @@ const RiverInfo = () => {
         "The Maury River formed a portion of an all-water route from the Atlantic ports of Virginia to Lexington from the late 18th to the late 19th century, primarily carrying passengers, pig iron, and agricultural products.",
       ],
       image: "/mauryRiver.jpg",
-      id: "#maury",
+      id: "maury",
     },
     {
       name: "Smith River",
@@ -48,14 +48,17 @@ const RiverInfo = () => {
         "Approximately 31 miles from Philpott Dam downstream to State Route 636 (Mitchell Bridge) are special regulation brown trout waters. Two sections of the Smith are designated as put-and-take stocked waters and provide opportunities to catch rainbow trout. Downstream of the special regulation section, anglers can expect to catch smallmouth bass, rock bass, and sunfish as the Smith makes its way into North Carolina.",
       ],
       image: "/smithRiver.jpg",
-      id: "#smith",
+      id: "smith",
     },
   ];
 
   const renderInfo = riverData.map((river, key) => {
     return (
-      <div key={key} id={river.id}>
-        <h3>{river.name}</h3>
+      <div key={key}>
+        <div id={river.id}>
+          <h3>{river.name}</h3>
+        </div>
+
         <div className={styles.image}>
           <Image
             src={river.image}

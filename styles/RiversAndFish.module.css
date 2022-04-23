@@ -5,3 +5,10 @@
 .container {
   background: #9bacba;
 }
+
+/* InfoNav */
+
+.infoNav {
+  display: flex;
+  justify-content: space-between;
+}
