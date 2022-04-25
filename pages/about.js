@@ -29,6 +29,7 @@ const About = () => {
               blurDataURL="data:..."
               placeholder="blur"
               quality={60}
+              priority
               alt="about image"
             />
           </div>
@@ -37,7 +38,7 @@ const About = () => {
             <div className={styles.body}>{body}</div>
             <div className={styles.buttons}>
               <Btn btnData={contactBtn} />
-              <Link href="https://www.instagram.com/mattmilesflyfishing/?hl=en">
+              <Link href="https://www.instagram.com/blue_mountain_drift/?hl=en">
                 <motion.div
                   className={styles.instaBtn}
                   whileHover={{ scale: 1.1 }}

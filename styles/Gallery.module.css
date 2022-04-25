@@ -1,14 +1,16 @@
 .outerContainer {
   background: #9ba3bc;
+  padding-bottom: 10%;
 }
 
 .galleryContainer {
   background: #9ba3bc;
+  /* margin-top: -5%; */
   height: 90vh;
 }
 
 .carouselContainer {
-  padding-top: 70px;
+  padding-top: 15px;
   height: 90vh;
 }
 
@@ -18,5 +20,5 @@
 }
 
 .image {
-  max-height: 70vh;
+  /* max-height: 70vh; */
 }

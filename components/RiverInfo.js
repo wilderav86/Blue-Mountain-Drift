@@ -55,8 +55,8 @@ const RiverInfo = () => {
   const renderInfo = riverData.map((river, key) => {
     return (
       <div key={key}>
-        <div id={river.id}>
-          <h3>{river.name}</h3>
+        <div id={river.id} className={styles.heading}>
+          <h3 className="heading light">{river.name}</h3>
         </div>
 
         <div className={styles.image}>
@@ -73,7 +73,11 @@ const RiverInfo = () => {
         </div>
         <div className={styles.body}>
           {river.desc.map((text, id) => {
-            return <p key={id}>{text}</p>;
+            return (
+              <p className="body light" key={id}>
+                {text}
+              </p>
+            );
           })}
         </div>
       </div>
@@ -82,7 +86,7 @@ const RiverInfo = () => {
 
   return (
     <div className={styles.infoContainer}>
-      <h2>Rivers</h2>
+      <h2 className={styles.seperator}>RIVERS</h2>
       {renderInfo}
       <div className={styles.cardContainer}></div>
     </div>

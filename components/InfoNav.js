@@ -61,7 +61,7 @@ const InfoNav = () => {
   return (
     <div className={styles.infoNav}>
       <div className={styles.subContainer}>
-        <Navbar expand="lg" collapseOnSelect>
+        <Navbar expand="lg" collapseOnSelect variant="dark">
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <h3>Fish</h3>
           </Navbar.Toggle>
@@ -74,7 +74,7 @@ const InfoNav = () => {
         </Navbar>
       </div>
       <div className={styles.subContainer}>
-        <Navbar expand="lg" collapseOnSelect>
+        <Navbar expand="lg" collapseOnSelect variant="dark">
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <h3>Rivers</h3>
           </Navbar.Toggle>

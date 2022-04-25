@@ -3,7 +3,8 @@ import { motion } from "framer-motion";
 import styles from "../styles/Home.module.css";
 
 const BgImage = () => {
-  const banner = "FLY FISHING GUIDE SERVING CENTRAL VIRGINIA";
+  const bannerLg = "FLY FISHING GUIDE";
+  const bannerSm = " SERVING CENTRAL VIRGINIA";
 
   //button props:
   // const btnLink = "/gallery";
@@ -16,8 +17,9 @@ const BgImage = () => {
       transition={{ delay: 0.6, duration: 1, ease: "easeIn" }}
       animate={{ opacity: 1 }}
     >
-      <div>
-        <h1 className="banner light">{banner}</h1>
+      <div className={styles.bannerContainer}>
+        <h1 className={styles.bannerLg}>{bannerLg}</h1>
+        <h4 className={styles.bannerSm}>{bannerSm}</h4>
       </div>
       <div>
         <Image

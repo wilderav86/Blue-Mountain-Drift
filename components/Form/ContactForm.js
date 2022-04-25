@@ -117,16 +117,18 @@ const ContactForm = () => {
           </Form.Group>
         </Row>
         <Row>
-          <Button
-            as={motion.button}
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-            size="lg"
-            variant="custom"
-            type="submit"
-          >
-            Send
-          </Button>
+          <div className={styles.btn}>
+            <Button
+              as={motion.button}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              size="lg"
+              variant="custom"
+              type="submit"
+            >
+              Send
+            </Button>
+          </div>
         </Row>
       </Form>
     </div>

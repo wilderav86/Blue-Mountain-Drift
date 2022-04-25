@@ -13,7 +13,7 @@ export default function Home() {
     style: "about-card",
     image: "/aboutCardImage.jpg",
     header: "",
-    body: "A Central Virginia based fly fishing and light tackle fishing guide specializing in float trips for smallmouth, muskie and trout",
+    body: "Mike Rennie is a Central Virginia based fly fishing and light tackle fishing guide specializing in float trips for smallmouth, muskie and trout",
     btnData: { name: "MEET MIKE", link: "/about" },
     id: styles.one,
   };

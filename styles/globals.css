@@ -37,6 +37,10 @@ ul {
   background: #9bacba;
 }
 
+.nav-color {
+  background-color: #9bacba;
+}
+
 /* Desktop Layout */
 
 @media (min-width: 800px) {

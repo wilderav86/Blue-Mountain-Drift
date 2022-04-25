@@ -38,16 +38,16 @@ const FishInfo = () => {
 
   const renderInfo = fishData.map((fish, key) => {
     return (
-      <div key={key}>
-        <div id={fish.id}>
-          <h3>{fish.name}</h3>
+      <div key={key} className={styles.cardContainer}>
+        <div id={fish.id} className={styles.heading}>
+          <h3 className="heading light">{fish.name}</h3>
         </div>
 
         <div className={styles.image}>
           <Image
             src={fish.image}
-            width="600px"
-            height="400px"
+            width="700px"
+            height="500px"
             objectFit="contain"
             blurDataURL={fish.image}
             placeholder="blur"
@@ -57,7 +57,11 @@ const FishInfo = () => {
         </div>
         <div className={styles.body}>
           {fish.desc.map((text, id) => {
-            return <p key={id}>{text}</p>;
+            return (
+              <p className="body light" key={id}>
+                {text}
+              </p>
+            );
           })}
         </div>
       </div>
@@ -66,7 +70,8 @@ const FishInfo = () => {
 
   return (
     <div className={styles.fishInfoContainer}>
-      <h2>Fish</h2>
+      <h2 className={styles.seperator}>FISH</h2>
+
       {renderInfo}
       <div className={styles.cardContainer}></div>
     </div>

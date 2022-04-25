@@ -36,7 +36,9 @@ const LandingCard = ({ data }) => {
                     <p className="body light">{body}</p>
                   </div>
                 )}
-                <Btn btnData={btnData} />
+                <div className={styles.btn}>
+                  <Btn btnData={btnData} />
+                </div>
               </div>
             </div>
           </div>

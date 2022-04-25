@@ -1,5 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&family=Oswald&display=swap");
+
 .outerContainer {
   background: #9bacba;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  /* width: 100%; */
 }
 
 .container {
@@ -9,10 +16,48 @@
   align-items: center;
   background: #9bacba;
   height: 100vh;
+  padding: 5%;
+  /* width: 80vw; */
+  /* margin: auto; */
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.heading {
+  font-family: "Oswald";
+  text-align: left;
+  font-size: clamp(2rem, 3vw, 3rem);
+  color: #f1f1f1;
+}
+
+.contact {
+  display: flex;
+}
+
+.accent {
+  font-family: "Oswald";
+  color: #eae691;
+  font-weight: 500;
+}
+
+.body {
+  font-family: "Old Standard TT";
+  /* margin: 5%; */
+  text-align: left;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  color: #f1f1f1;
 }
 
 .form {
-  width: 80%;
+  /* width: 100%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .label {
@@ -20,4 +65,16 @@
   text-align: center;
   font-size: clamp(1.1rem, 2.5vw, 1.5rem);
   color: #f1f1f1;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 800px) {
+  .contactInfo {
+    /* align-items: flex-start; */
+    /* width: 70%; */
+  }
 }
