@@ -76,7 +76,7 @@ const Packages = () => {
                 height="60%"
                 layout="responsive"
                 objectFit="contain"
-                blurDataURL="data:..."
+                blurDataURL="/packagePageBG.jpg"
                 placeholder="blur"
                 quality={60}
                 priority

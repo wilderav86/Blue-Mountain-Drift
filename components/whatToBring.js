@@ -52,6 +52,8 @@ const WhatToBring = () => {
             height="90%"
             layout="responsive"
             objectFit="contain"
+            blurDataURL="/whatToBringImage.jpg"
+            placeholder="blur"
             // objectPosition="top"
 
             alt="packages image"

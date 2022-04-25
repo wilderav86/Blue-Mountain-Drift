@@ -60,28 +60,32 @@ const InfoNav = () => {
 
   return (
     <div className={styles.infoNav}>
-      <Navbar expand="lg" collapseOnSelect>
-        <Navbar.Toggle aria-controls="basic-navbar-nav">
-          <h3>Fish</h3>
-        </Navbar.Toggle>
+      <div className={styles.subContainer}>
+        <Navbar expand="lg" collapseOnSelect>
+          <Navbar.Toggle aria-controls="basic-navbar-nav">
+            <h3>Fish</h3>
+          </Navbar.Toggle>
 
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto" navbarScroll>
-            {renderFish}
-          </Nav>
-        </Navbar.Collapse>
-      </Navbar>
-      <Navbar expand="lg" collapseOnSelect>
-        <Navbar.Toggle aria-controls="basic-navbar-nav">
-          <h3>Rivers</h3>
-        </Navbar.Toggle>
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="ms-auto" navbarScroll>
+              <div className={styles.navItems}>{renderFish}</div>
+            </Nav>
+          </Navbar.Collapse>
+        </Navbar>
+      </div>
+      <div className={styles.subContainer}>
+        <Navbar expand="lg" collapseOnSelect>
+          <Navbar.Toggle aria-controls="basic-navbar-nav">
+            <h3>Rivers</h3>
+          </Navbar.Toggle>
 
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto" navbarScroll>
-            {renderRivers}
-          </Nav>
-        </Navbar.Collapse>
-      </Navbar>
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="ms-auto" navbarScroll>
+              <div className={styles.navItems}>{renderRivers}</div>
+            </Nav>
+          </Navbar.Collapse>
+        </Navbar>
+      </div>
     </div>
   );
 };

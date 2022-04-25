@@ -4,11 +4,55 @@
 
 .container {
   background: #9bacba;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.subContainer {
+  margin: 3.5rem;
+}
+
+.btn {
 }
 
 /* InfoNav */
 
 .infoNav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+
+.btn {
+  display: flex;
+  justify-content: flex-end;
+  background: #9bacba;
+  /* position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  align-self: flex-start; */
+}
+
+@media (min-width: 992px) {
+  .container {
+    flex-direction: row-reverse;
+  }
+
+  .infoNav {
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    top: 0;
+  }
+
+  .navItems {
+    display: flex;
+    flex-direction: column;
+  }
 }
