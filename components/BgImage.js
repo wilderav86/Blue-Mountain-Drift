@@ -14,7 +14,7 @@ const BgImage = () => {
     <motion.div
       className={styles.bgContainer}
       initial={{ opacity: 0 }}
-      transition={{ delay: 0.6, duration: 1, ease: "easeIn" }}
+      transition={{ delay: 0.6, duration: 0.5, ease: "easeIn" }}
       animate={{ opacity: 1 }}
     >
       <div className={styles.bannerContainer}>
@@ -24,11 +24,11 @@ const BgImage = () => {
       <div>
         <Image
           className={styles.bgImage}
-          src="/LandingBG.jpg"
+          src="/LandingBGsmall.jpg"
           layout="fill"
           objectFit="cover"
           objectPosition="left 30% top 50%"
-          blurDataURL="data:..."
+          blurDataURL="/LandingBGsmall.jpg"
           placeholder="blur"
           quality={60}
           sizes="320 640 750"
