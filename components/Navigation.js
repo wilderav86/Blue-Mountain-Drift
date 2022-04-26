@@ -22,8 +22,8 @@ const Navigation = () => {
       link: "/gallery",
     },
     {
-      name: "Rivers and Fish",
-      link: "/riversandfish",
+      name: "The Waters",
+      link: "/thewaters",
     },
     {
       name: "FAQ",

@@ -29,7 +29,7 @@
   font-size: clamp(1rem, 6vw, 3rem);
   margin-left: -45%;
   margin-top: 5%;
-  text-shadow: -1px 1px 0 #000;
+  /* text-shadow: -1px 1px 0 #000; */
   justify-self: flex-start;
 }
 
