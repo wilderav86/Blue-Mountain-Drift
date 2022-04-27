@@ -21,16 +21,19 @@
 
 .heading {
   position: absolute;
-  max-width: 800px;
+  /* max-width: 800px; */
+  width: 100%;
   z-index: 1;
   font-family: "oswald";
   color: #3d4d6d;
   text-align: left;
   font-size: clamp(1rem, 6vw, 3rem);
-  margin-left: -45%;
-  margin-top: 5%;
+  /* margin-left: -45%;
+  margin-top: 5%; */
   /* text-shadow: -1px 1px 0 #000; */
   justify-self: flex-start;
+  padding-left: 20px;
+  padding-top: 15px;
 }
 
 .content {
@@ -78,10 +81,13 @@
     margin-left: -350px; */
     /* width: 100%;
     height: 40%; */
-    margin-top: 7%;
+
+    /* 
     margin-left: 110px;
-    width: 100%;
-    height: 40%;
+    
+    height: 40%; */
+    width: 650px;
+    margin-top: 7%;
   }
 
   .image {
