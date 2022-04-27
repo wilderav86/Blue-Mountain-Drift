@@ -54,7 +54,6 @@ const Navigation = () => {
   });
 
   return (
-    // <div className="nav-container">
     <Navbar expanded={expanded} bg="light" expand="lg" onClick={handleExpand}>
       <Container>
         <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
@@ -75,7 +74,6 @@ const Navigation = () => {
         </Navbar.Collapse>
       </Container>
     </Navbar>
-    // </div>
   );
 
   // return (
