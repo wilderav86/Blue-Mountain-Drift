@@ -1,7 +1,7 @@
 import { Navbar, Nav } from "react-bootstrap";
 import Link from "next/link";
 
-import styles from "../styles/RiversAndFish.module.css";
+import styles from "../styles/TheWaters.module.css";
 
 const InfoNav = () => {
   const fish = [

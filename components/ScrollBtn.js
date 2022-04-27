@@ -18,11 +18,11 @@ const ScrollToTop = () => {
   return (
     <motion.div
       style={{
-        position: "sticky",
+        // position: "sticky",
         bottom: 0,
         margin: 30,
         height: "auto",
-        alignSelf: "flex-start",
+        alignSelf: "center",
       }}
       className="scroll-to-top"
       onClick={handleScrollToTop}

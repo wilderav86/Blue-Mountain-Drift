@@ -50,7 +50,7 @@ const RiverInfo = () => {
             blurDataURL={river.image}
             placeholder="blur"
             quality={70}
-            alt="fish image"
+            alt="river image"
           />
         </div>
         <div className={styles.bodyContainer}>
@@ -65,7 +65,7 @@ const RiverInfo = () => {
 
   return (
     <div className={styles.infoContainer}>
-      <h2 className={styles.title}>THE WATERS</h2>
+      <h2 className={styles.title}>RIVERS</h2>
 
       {renderInfo}
     </div>

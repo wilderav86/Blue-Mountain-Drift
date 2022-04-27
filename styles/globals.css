@@ -46,7 +46,8 @@ ul {
 @media (min-width: 800px) {
   .about-card,
   .packages-card,
-  .contact-card {
+  .contact-card,
+  .scroll-to-top {
     display: flex;
     justify-content: center;
   }
