@@ -29,8 +29,8 @@ const ContactForm = () => {
       <Form
         name="contact"
         method="POST"
-        data-netlify="true"
-        data-netlify-honeypot="bot-field"
+        netlify="true"
+        // data-netlify-honeypot="bot-field"
         onSubmit="submit"
       >
         <input type="hidden" name="contact-form" value="contact" />
@@ -56,9 +56,9 @@ const ContactForm = () => {
             </Form.Group>
           </Col>
           <Col>
-            <Form.Group className={styles.phone} controlId="Phone number">
+            <Form.Group className={styles.phone} controlId="Phone">
               <Form.Label className={styles.label}>Phone number</Form.Label>
-              <Form.Control name="phone number" />
+              <Form.Control name="phone" />
             </Form.Group>
           </Col>
         </Row>
@@ -68,7 +68,7 @@ const ContactForm = () => {
             <Form.Control
               as="textarea"
               rows="3"
-              name="trip-info"
+              name="trip info"
               placeholder="Tell us more about the adventure you'd like to take, as well as
           your preferred dates."
             />
@@ -104,7 +104,7 @@ const ContactForm = () => {
         </Row>
         <Row>
           <Form.Group className="mb-3" controlId="waterDropDown">
-            <Form.Select id="wish option" name="Water option" defaultValue="">
+            <Form.Select id="water option" name="Water option" defaultValue="">
               <option value="" disabled>
                 Choose your water
               </option>
