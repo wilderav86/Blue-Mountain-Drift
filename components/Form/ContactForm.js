@@ -27,14 +27,14 @@ const ContactForm = () => {
   return (
     <div className={styles.form}>
       <Form
-        name="contact-v1"
+        name="contact"
         method="post"
         data-netlify="true"
         data-netlify-recaptcha="true"
         data-netlify-honeypot="bot-field"
         onSubmit="submit"
       >
-        <input type="hidden" name="contact-v1" value="contact" />
+        <input type="hidden" name="form-name" value="contact" />
         <input type="hidden" name="bot-field" />
         <Row>
           <Col>
