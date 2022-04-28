@@ -27,13 +27,13 @@ const ContactForm = () => {
   return (
     <div className={styles.form}>
       <Form
-        name="contact"
-        method="POST"
+        name="contact-v1"
+        method="post"
         netlify="true"
         // data-netlify-honeypot="bot-field"
         onSubmit="submit"
       >
-        <input type="hidden" name="contact-form" value="contact" />
+        <input type="hidden" name="contact-v1" value="contact" />
         <Row>
           <Col>
             <Form.Group className={styles.first} controlId="First name">
