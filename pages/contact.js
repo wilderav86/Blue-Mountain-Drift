@@ -71,7 +71,7 @@ const Contact = () => {
                 data-netlify-honeypot="bot-field"
                 onSubmit="submit"
               >
-                <input type="hidden" name="contactv2" value="contact-v1" />
+                <input type="hidden" name="contactv2" value="contactv2" />
                 <input type="hidden" name="bot-field" />
                 <Row>
                   <Col>
