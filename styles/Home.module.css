@@ -17,13 +17,14 @@
 .bannerContainer {
   display: flex;
   flex-direction: column;
+  padding-bottom: 100px;
 }
 
 .bannerLg {
   font-family: "Oswald";
   color: #f1f1f1;
   text-align: center;
-  font-size: clamp(3rem, 6vw, 6rem);
+  font-size: clamp(3.5rem, 8vw, 8rem);
   margin-bottom: 0;
   text-shadow: -1px 1px 0 #000;
   align-self: center;
@@ -147,11 +148,15 @@
 }
 
 @media (min-width: 950px) {
-  .bannerContainer {
+  /* .bannerContainer {
     flex-direction: row;
-  }
+  } */
   .bannerLg {
-    margin-bottom: 15%;
+    /* margin-bottom: 15%; */
+  }
+
+  .bannerContainer {
+    padding-bottom: 300px;
   }
 }
 
