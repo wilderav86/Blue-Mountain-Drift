@@ -77,7 +77,8 @@ const ContactForm = () => {
         </Row>
         <Row>
           <Form.Group className="mb-3" controlId="tripDropDown">
-            <Form.Select id="trip option" name="Trip option" defaultValue="">
+            <Form.Select id="trip option" defaultValue="">
+              <Form.Control name="Trip option" />
               <option value="" disabled>
                 Choose your trip
               </option>
@@ -91,7 +92,8 @@ const ContactForm = () => {
         </Row>
         <Row>
           <Form.Group className="mb-3" controlId="fishDropDown">
-            <Form.Select id="Fish option" name="Fish option" defaultValue="">
+            <Form.Select id="Fish option" defaultValue="">
+              <Form.Control name="Fish option" />
               <option value="" disabled>
                 Choose your fish
               </option>
@@ -105,7 +107,8 @@ const ContactForm = () => {
         </Row>
         <Row>
           <Form.Group className="mb-3" controlId="waterDropDown">
-            <Form.Select id="water option" name="Water option" defaultValue="">
+            <Form.Select id="water option" defaultValue="">
+              <Form.Control name="Water option" />
               <option value="" disabled>
                 Choose your water
               </option>
