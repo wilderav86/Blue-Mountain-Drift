@@ -76,7 +76,7 @@ const ContactForm = () => {
             />
           </Form.Group>
         </Row>
-        <Row>
+        {/* <Row>
           <Form.Group className="mb-3" controlId="tripDropDown">
             <Form.Select id="trip option" name="Trip option" defaultValue="">
               <option value="" disabled>
@@ -117,7 +117,7 @@ const ContactForm = () => {
               ))}
             </Form.Select>
           </Form.Group>
-        </Row>
+        </Row> */}
         <Row>
           <div className={styles.btn}>
             <Button
