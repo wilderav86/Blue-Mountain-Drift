@@ -29,8 +29,9 @@ const ContactForm = () => {
       <Form
         name="contact-v1"
         method="post"
-        netlify="true"
-        // data-netlify-honeypot="bot-field"
+        data-netlify="true"
+        data-netlify-recaptcha="true"
+        data-netlify-honeypot="bot-field"
         onSubmit="submit"
       >
         <input type="hidden" name="contact-v1" value="contact" />
@@ -77,8 +78,7 @@ const ContactForm = () => {
         </Row>
         <Row>
           <Form.Group className="mb-3" controlId="tripDropDown">
-            <Form.Select id="trip option" defaultValue="">
-              <Form.Control name="Trip option" />
+            <Form.Select id="trip option" name="Trip option" defaultValue="">
               <option value="" disabled>
                 Choose your trip
               </option>
@@ -92,8 +92,7 @@ const ContactForm = () => {
         </Row>
         <Row>
           <Form.Group className="mb-3" controlId="fishDropDown">
-            <Form.Select id="Fish option" defaultValue="">
-              <Form.Control name="Fish option" />
+            <Form.Select id="Fish option" name="Fish option" defaultValue="">
               <option value="" disabled>
                 Choose your fish
               </option>
@@ -107,8 +106,7 @@ const ContactForm = () => {
         </Row>
         <Row>
           <Form.Group className="mb-3" controlId="waterDropDown">
-            <Form.Select id="water option" defaultValue="">
-              <Form.Control name="Water option" />
+            <Form.Select id="water option" name="Water option" defaultValue="">
               <option value="" disabled>
                 Choose your water
               </option>
