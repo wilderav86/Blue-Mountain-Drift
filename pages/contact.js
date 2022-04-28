@@ -26,6 +26,25 @@ const Contact = () => {
     "Other",
   ];
 
+  // const handleSubmit = event => {
+  //   event.preventDefault();
+
+  //  // do your verifications and checks
+  //  if(!verified) return false
+
+  //   const REQUEST_PARAMETERS = {
+  //     method: `POST`,
+  //     headers: { 'Content-Type': `application/x-www-form-urlencoded` },
+  //     body: encode({ ...data }), //your data here. Needs to have your form-name attribute set
+  //   };
+
+  //   fetch(`/`, REQUEST_PARAMETERS)
+  //     .then(() => {
+  //       console.log(`OK`);
+  //     })
+  //     .catch(error => alert(error));
+  // };
+
   return (
     <div className={styles.outerContainer}>
       <PageTransition>
@@ -52,7 +71,7 @@ const Contact = () => {
                 data-netlify-honeypot="bot-field"
                 onSubmit="submit"
               >
-                <input type="hidden" name="contact-v1" value="contact" />
+                <input type="hidden" name="form-name" value="contact-v1" />
                 <input type="hidden" name="bot-field" />
                 <Row>
                   <Col>
