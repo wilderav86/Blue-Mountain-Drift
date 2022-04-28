@@ -34,6 +34,7 @@ const ContactForm = () => {
         onSubmit="submit"
       >
         <input type="hidden" name="contact-v1" value="contact" />
+        <input type="hidden" name="bot-field" />
         <Row>
           <Col>
             <Form.Group className={styles.first} controlId="First name">
