@@ -1,9 +1,9 @@
 import PageTransition from "../animations/PageTransition";
 import ContactForm from "../components/Form/ContactForm";
 import styles from "../styles/Contact.module.css";
-import { Form, Button } from "react-bootstrap";
-import { Row, Col } from "react-bootstrap";
-import { motion } from "framer-motion";
+// import { Form, Button } from "react-bootstrap";
+// import { Row, Col } from "react-bootstrap";
+// import { motion } from "framer-motion";
 
 const Contact = () => {
   const tripOptions = [
@@ -62,7 +62,7 @@ const Contact = () => {
                 <p className={styles.accent}>(904) 248-9257</p>
               </div>
             </div>
-            <div className={styles.form}>
+            {/* <div className={styles.form}>
               <Form
                 name="contactv2"
                 method="post"
@@ -190,8 +190,8 @@ const Contact = () => {
                   </div>
                 </Row>
               </Form>
-            </div>
-            {/* <ContactForm /> */}
+            </div> */}
+            <ContactForm />
           </div>
         </div>
       </PageTransition>
