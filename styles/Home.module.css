@@ -24,7 +24,7 @@
   font-family: "Oswald";
   color: #f1f1f1;
   text-align: center;
-  font-size: clamp(3.5rem, 8vw, 8rem);
+  font-size: clamp(2.5rem, 8vw, 8rem);
   margin-bottom: 0;
   text-shadow: -1px 1px 0 #000;
   align-self: center;
