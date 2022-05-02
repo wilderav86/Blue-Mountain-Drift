@@ -3,11 +3,6 @@
 .outerContainer {
   background: #9bacba;
   padding-bottom: 10%;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
-  /* width: 100%; */
 }
 
 .container {
@@ -18,8 +13,6 @@
   background: #9bacba;
   height: 100%;
   padding: 5%;
-  /* width: 80vw; */
-  /* margin: auto; */
 }
 
 .contactInfo {
@@ -48,14 +41,13 @@
 
 .body {
   font-family: "Old Standard TT";
-  /* margin: 5%; */
+
   text-align: left;
   font-size: clamp(1rem, 2vw, 1.5rem);
   color: #f1f1f1;
 }
 
 .form {
-  /* width: 100%; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,11 +63,4 @@
 .btn {
   display: flex;
   justify-content: center;
-}
-
-@media (min-width: 800px) {
-  .contactInfo {
-    /* align-items: flex-start; */
-    /* width: 70%; */
-  }
 }

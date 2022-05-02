@@ -148,13 +148,6 @@
 }
 
 @media (min-width: 950px) {
-  /* .bannerContainer {
-    flex-direction: row;
-  } */
-  .bannerLg {
-    /* margin-bottom: 15%; */
-  }
-
   .bannerContainer {
     height: 80vh;
     justify-content: center;

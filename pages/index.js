@@ -41,17 +41,16 @@ export default function Home() {
       <Head>
         <title>Blue Mountain Drift</title>
         <meta
-          name="Mike Rennie"
-          content="Fly fishing guide serving Central Virginia"
+          name="description"
+          content="Mike Rennie - Fly fishing guide serving Central Virginia"
         />
         <meta property="og:title" content="Blue Mountain Drift" />
         <meta
           property="og:description"
-          content="Fly fishing guide serving Central Virginia"
+          content="Mike Rennie - Fly fishing guide serving Central Virginia"
         />
-        <meta property="og:url" content="placeholder" />
+        <meta property="og:url" content="www.bluemountaindriftflyfishing.com" />
         <meta property="og:type" content="website" />
-        <meta property="" content="" />
         <link rel="icon" href="/logo.png" />
       </Head>
       <BgImage />
