@@ -56,7 +56,7 @@ const NameTag = () => {
           }}
         >
           <Image
-            src="/milesLogo.png"
+            src="/milesLogoSmallOval.png"
             height={200}
             width={500}
             priority

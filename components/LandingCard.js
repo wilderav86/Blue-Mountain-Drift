@@ -25,7 +25,7 @@ const LandingCard = ({ data }) => {
                   objectFit="contain"
                   blurDataURL={image}
                   placeholder="blur"
-                  quality={50}
+                  quality={60}
                   alt="landing image"
                 />
               </div>

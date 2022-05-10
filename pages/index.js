@@ -20,7 +20,7 @@ export default function Home() {
 
   const packagesCard = {
     style: "packages-card",
-    image: "/packagesCardImage.jpg",
+    image: "/packagesCardImageSm.jpg",
     header: "LET US TAKE YOU ON A TRIP",
     body: "We are full service fly fishing guides providing year round fishing to some of Virginia's premier rivers. Whether you are a first time fly angler or avid fisherman, we can teach you from the ground up or help hone your skills. Let us show you some of the great fishing Virginia has to offer. From cool trout waters to hot summertime smallmouth fishing, we have you covered for a memorable day floating down some of Virginia's best waters.",
     btnData: { name: "VIEW TRIP PACKAGES", link: "/packages" },
@@ -29,7 +29,7 @@ export default function Home() {
 
   const contactCard = {
     style: "contact-card",
-    image: "/contactCardImage.jpg",
+    image: "/contactCardImageSm.jpg",
     header: "PLAN YOUR NEXT TRIP WITH US",
     body: "",
     btnData: { name: "CONTACT", link: "/contact" },
