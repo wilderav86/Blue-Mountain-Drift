@@ -50,6 +50,7 @@ const WhatToBring = () => {
             src="/whatToBringImage.jpg"
             width="60%"
             height="90%"
+            quality={50}
             layout="responsive"
             objectFit="contain"
             blurDataURL="/whatToBringImage.jpg"

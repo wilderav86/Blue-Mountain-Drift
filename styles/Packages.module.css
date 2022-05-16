@@ -42,7 +42,7 @@
   font-size: clamp(1rem, 6vw, 3rem);
   margin-left: -45%;
   margin-top: 3%;
-  text-shadow: -1px 1px 0 #000;
+  /* text-shadow: -1px 1px 0 #000; */
   justify-self: flex-start;
 }
 
@@ -122,7 +122,7 @@
   text-align: left;
   margin: 5%;
 
-  text-shadow: -1px 1px 0 #000;
+  /* text-shadow: -1px 1px 0 #000; */
   font-size: clamp(2rem, 6vw, 3rem);
 }
 
@@ -154,9 +154,9 @@
 
 /* Fine Print */
 
-.content {
+/* .content {
   width: 70vw;
-}
+} */
 
 .finePrint {
   font-family: '"Old Standard TT"';
