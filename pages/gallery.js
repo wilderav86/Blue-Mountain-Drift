@@ -16,13 +16,13 @@ import styles from "../styles/Gallery.module.css";
 //   };
 // };
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
   const id = process.env.NEXT_PUBLIC_INSTA_ID;
   const key = process.env.NEXT_PUBLIC_INSTA_KEY;
   console.log(id, key);
 
   const res = await fetch(
-    `https://graph.instagram.com/me/media?fields=${id},caption,media_url&access_token=${key}`
+    `https://graph.instagram.com/me/media?fields=${id},caption,media_url,permalink&access_token=${key}`
   );
   const data = await res.json();
 
@@ -36,6 +36,7 @@ const Gallery = ({ images }) => {
 
   const renderCarouselItems = images.data.map((image, id) => {
     const src = image.media_url;
+
     return (
       <Carousel.Item key={id}>
         <div className={styles.image} align="center">
