@@ -11,7 +11,7 @@
   "dependencies": {
     "bootstrap": "^5.1.0",
     "framer-motion": "^6.2.8",
-    "next": "^12.1.7-canary.42",
+    "next": "^12.1.6",
     "react": "17.0.2",
     "react-bootstrap": "^2.0.0-rc.1",
     "react-dom": "17.0.2",
@@ -21,6 +21,6 @@
   "devDependencies": {
     "@netlify/plugin-nextjs": "^4.5.0",
     "eslint": "^8.11.0",
-    "eslint-config-next": "^12.1.7-canary.42"
+    "eslint-config-next": "^12.1.6"
   }
 }
