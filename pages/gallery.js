@@ -4,6 +4,7 @@ import Image from "next/image";
 import PageTransition from "../animations/PageTransition";
 
 import styles from "../styles/Gallery.module.css";
+import { useEffect } from "react";
 
 // export const getServerSideProps = async () => {
 //   const res = await fetch(
@@ -19,7 +20,19 @@ import styles from "../styles/Gallery.module.css";
 export const getServerSideProps = async () => {
   const id = process.env.NEXT_PUBLIC_INSTA_ID;
   const key = process.env.NEXT_PUBLIC_INSTA_KEY;
-  console.log(id, key);
+
+  // const [keyRes, dataRes] = await Promise.all([
+  //   fetch(
+  //     `https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token=IGQVJXTDViVlgzNU9zb2JHZAWRXZAGt0QXhyLWFNTm5GbzNWWVZAIdm5NS1ppNldxc0drRElaTl90QVUxUGIwc1pxZAUFMUGZAmVk9yTFMydGh3UGdXSVg4X0lQNFBIOGxyNHRYSWo1d3RoSGwyZAm03YlFBbQZDZD`
+  //   ),
+  //   fetch(
+  //     `https://graph.instagram.com/me/media?fields=${id},caption,media_url,permalink&access_token=${key}`
+  //   ),
+  // ]);
+
+  // const [apiKey, data] = await Promise.all([keyRes.json(), dataRes.json()]);
+
+  /////////////////////////og code DO NOT DELETE
 
   const res = await fetch(
     `https://graph.instagram.com/me/media?fields=${id},caption,media_url,permalink&access_token=${key}`
@@ -29,11 +42,11 @@ export const getServerSideProps = async () => {
   return {
     props: { images: data },
   };
+
+  ///////////////////////////
 };
 
 const Gallery = ({ images }) => {
-  // console.log(token);
-
   const renderCarouselItems = images.data.map((image, id) => {
     const src = image.media_url;
 
