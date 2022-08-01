@@ -6,10 +6,6 @@ const BgImage = () => {
   const bannerLg = "FLY FISHING GUIDE";
   const bannerSm = " SERVING CENTRAL VIRGINIA";
 
-  //button props:
-  // const btnLink = "/gallery";
-  // const btnName = "Gallery";
-
   return (
     <motion.div
       className={styles.bgContainer}
