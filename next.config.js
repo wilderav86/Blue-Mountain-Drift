@@ -5,6 +5,11 @@ const nextConfig = {
   env: {
     NEXT_PUBLIC_INSTA_ID: process.env.NEXT_PUBLIC_INSTA_ID,
     NEXT_PUBLIC_INSTA_KEY: process.env.NEXT_PUBLIC_INSTA_KEY,
+    MAILCHIMP_API_KEY: process.env.MAILCHIMP_API_KEY,
+
+    MAILCHIMP_AUDIENCE_ID: process.env.MAILCHIMP_AUDIENCE_ID,
+
+    MAILCHIMP_API_SERVER: process.env.MAILCHIMP_API_SERVER,
   },
   images: {
     formats: ["image/avif", "image/webp"],

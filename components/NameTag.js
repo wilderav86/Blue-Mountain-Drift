@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
+import Newsletter from "./Form/Newsletter";
 
 const NameTag = () => {
   const name = "MIKE RENNIE";

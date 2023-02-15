@@ -75,21 +75,6 @@ const Navigation = () => {
       </Container>
     </Navbar>
   );
-
-  // return (
-  //   <div>
-  //     <Navbar collapseOnSelect bg="none" variant="dark" expand="lg" fixed="top">
-  //       <Container fluid>
-  //         <Navbar.Toggle aria-controls="navbarScroll" />
-  //         <Navbar.Collapse id="navbarScroll">
-  //           <Nav className="me-auto my-2 my-lg-0" navbarScroll>
-  //             {renderLinks}
-  //           </Nav>
-  //         </Navbar.Collapse>
-  //       </Container>
-  //     </Navbar>
-  //   </div>
-  // );
 };
 
 export default Navigation;

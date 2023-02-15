@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(95, 120, 162);
+}
+
+.form {
+  display: flex;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.label {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-family: "Oswald";
+  font-size: 1.7rem;
+  color: #eae691;
+  text-align: center;
+  text-shadow: -1px 1px 0 #b0ad6d;
+  width: 100%;
+}
+
+.message {
+  height: 50px;
+  font-family: "Oswald";
+  font-size: 1.1rem;
+  color: #eae691;
+  text-align: center;
+  margin-right: 0.3rem;
+  margin-left: 0.3rem;
+}
+
+@media (min-width: 500px) {
+}

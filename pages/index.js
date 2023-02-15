@@ -6,6 +6,7 @@ import Socials from "../components/Socials";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "../styles/Home.module.css";
+import Newsletter from "../components/Form/Newsletter";
 
 export default function Home() {
   //Card data for LandingCard components:
@@ -54,6 +55,7 @@ export default function Home() {
         <link rel="icon" href="/logo.png" />
       </Head>
       <BgImage />
+      <Newsletter />
       <NameTag />
       <LandingCard data={aboutCard} />
       <LandingCard data={packagesCard} />
