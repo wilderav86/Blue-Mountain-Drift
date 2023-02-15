@@ -5,7 +5,7 @@ import styles from "../styles/TheWaters.module.css";
 const FishInfo = () => {
   const fishData = [
     {
-      name: "Small Mouth Bass",
+      name: "Smallmouth Bass",
       desc: "One of hardest fighting freshwater fish to be caught on a fly rod. Smallmouth weigh between 1 and 5 pounds, on average, and can exceed 8 pounds. They’re naturally aggressive and eager to take a streamer or popper.  Best smallmouth bass fishing in VA is June through September.",
       image: "/smallmouth.jpg",
       id: "smallmouth",
@@ -27,10 +27,6 @@ const FishInfo = () => {
   const renderInfo = fishData.map((fish, key) => {
     return (
       <div key={key} className={styles.infoCard}>
-        {/* <div id={fish.id} className={styles.heading}>
-          <h3 className="heading light">{fish.name}</h3>
-        </div> */}
-
         <div className={styles.image}>
           <Image
             src={fish.image}
